@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PixlCam – Free Dash Cam App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --blue-left: #3E6F9A;
+      --blue-right: #6F98B6;
+      --dark-text: #1F2937;
+    }
+
+    #pixlcam-logo{
+        border-radius: 10px;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      color: var(--dark-text);
+    }
+
+    .hero {
+      min-height: 100vh;
+      background: linear-gradient(135deg, var(--blue-left), var(--blue-right));
+      color: white;
+      display: flex;
+      align-items: center;
+    }
+
+    .hero h1 {
+      font-weight: 700;
+      font-size: clamp(2.5rem, 5vw, 3.5rem);
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      opacity: 0.95;
+    }
+
+    .risk-box {
+      background: rgba(255,255,255,0.12);
+      border-radius: 1rem;
+      padding: 1rem;
+      font-size: 0.95rem;
+    }
+
+    .btn-primary-custom {
+      background: white;
+      color: var(--blue-left);
+      border: none;
+      padding: 0.9rem 1.7rem;
+      font-weight: 700;
+      border-radius: 0.75rem;
+    }
+
+    .btn-primary-custom:hover {
+      filter: brightness(0.92);
+      transform: translateY(-1px);
+    }
+
+    .feature-card {
+      border: none;
+      border-radius: 1rem;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      transition: transform 0.2s ease;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-6px);
+    }
+
+    footer {
+      background: #0f172a;
+      color: #cbd5f5;
+    }
+
+    .footer-link {
+      color: #cbd5f5;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .footer-link:hover {
+      color: #ffffff;
+      text-decoration: underline;
+    }
+
+  </style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container text-center">
+    <img src="images/pixlcam-full-logo.png" id="pixlcam-logo" alt="PixlCam Logo" width="150" class="mb-4">
+
+    <h1>You're driving without proof.</h1>
+    <p class="mt-3">
+      Most drivers have <strong>no dashcam</strong> - or rely on cheap hardware that fails when it matters.
+      PixlCam turns the phone you already own into a reliable dash cam.
+    </p>
+
+    <div class="risk-box my-4 mx-auto" style="max-width: 600px;">
+      If something happens, footage is the difference between proof and blame.
+    </div>  
+
+    <div class="d-flex justify-content-center gap-3 flex-wrap">
+      <a href="#" class="btn btn-primary-custom btn-lg">
+        Install Free on Google Play
+      </a>
+      <span class="align-self-center small opacity-75">
+        Free • No hardware • 2-minute setup
+      </span>
+    </div>
+  </div>
+</section>
+
+<!-- PROBLEM -->
+<section class="py-5 bg-light">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-3">Why most dashcams fail drivers</h2>
+    <p class="text-muted mb-5">
+      Dedicated dashcams sound good - until you actually need them.
+    </p>
+
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card feature-card p-4 h-100">
+          <h5 class="fw-semibold">❌ No dashcam at all</h5>
+          <p class="text-muted mt-2">
+            Most drivers rely on memory and hope. Insurance doesn't.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card feature-card p-4 h-100">
+          <h5 class="fw-semibold">❌ Cheap hardware</h5>
+          <p class="text-muted mt-2">
+            Low resolution, dead batteries, corrupted footage.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card feature-card p-4 h-100">
+          <h5 class="fw-semibold">❌ Hassle to install</h5>
+          <p class="text-muted mt-2">
+            Wires, mounts, and setup most people never finish.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOLUTION -->
+<section class="py-5">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-3">PixlCam fixes all of that</h2>
+    <p class="text-muted mb-5">
+      No extra devices. No cost to start. Just install and drive.
+    </p>
+
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card feature-card p-4 h-100">
+          <h5 class="fw-semibold">📱 Uses your phone</h5>
+          <p class="text-muted mt-2">
+            High-quality camera you already trust.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card feature-card p-4 h-100">
+          <h5 class="fw-semibold">🔁 Automatic recording</h5>
+          <p class="text-muted mt-2">
+            Starts recording when you drive. Important moments can be protected, not overwritten.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card feature-card p-4 h-100">
+          <h5 class="fw-semibold">🆓 Free to install</h5>
+          <p class="text-muted mt-2">
+            No hardware. No commitment. Upgrade only if you want.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="py-5 bg-light">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-3">Don't wait for an accident to wish you had footage.</h2>
+    <p class="text-muted mb-4">
+      Install PixlCam for free and drive protected today.
+    </p>
+    <a href="#" class="btn btn-primary-custom btn-lg">
+      Install PixlCam - It's Free
+    </a>
+  </div>
+</section>
+
+<footer class="py-4">
+  <div class="container text-center small">
+    <div class="mb-2 opacity-75">
+      © 2026 PixlCam · A CM Interactive Limited Brand
+    </div>
+
+    <div class="d-flex justify-content-center gap-3 mb-2">
+      <a href="index.html" class="footer-link">Home</a>
+      <span class="opacity-50">•</span>
+      <a href="privacy-policy.html" class="footer-link">Privacy Policy</a>
+    </div>
+
+    <div class="opacity-50">
+      CM Interactive Limited · England & Wales · Company No. 15392983
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
