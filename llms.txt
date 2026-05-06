@@ -1,0 +1,27 @@
+# PixlCam
+ 
+> PixlCam is a free dashcam app developed by CM Interactive Limited that turns your smartphone into a dashcam. No extra hardware required - just install the app, mount your phone, and drive protected. Available on Android, coming soon to iPhone.
+ 
+## Pages
+ 
+- [Home](https://pixlcam.com/): Main landing page. Explains what PixlCam is, how it works, and links to download on Android.
+- [Get Started](https://pixlcam.com/get-started): Step-by-step onboarding guide. Covers mounting your phone, installing the app, and starting to record.
+- [iPhone Waitlist](https://pixlcam.com/iphone-waitlist): PixlCam is coming to iOS. Users can join the waitlist to be notified when PixlCam launches on the Apple App Store.
+- [Privacy Policy](https://pixlcam.com/privacy-policy): Full privacy policy covering app data handling, crash diagnostics, newsletter data, and third-party services (Firebase Crashlytics, Brevo).
+ 
+## Product
+ 
+- PixlCam is free to install and use
+- Records video in the background while driving
+- Loop recording automatically overwrites old footage to prevent storage from filling up
+- Users can protect important clips to prevent them being overwritten
+- No account required
+- Available on Android via Google Play
+- iOS version in active development
+ 
+## Company
+ 
+- Developer: CM Interactive Limited
+- Registered in England and Wales, Company No. 15392983
+- Contact: support@pixlcam.com
+- Website: https://pixlcam.com
