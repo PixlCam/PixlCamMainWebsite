@@ -103,9 +103,11 @@
       font-weight: 700;
       src: url(https://assets.brevo.com/font/Roboto/Latin/bold/normal/3ef7cf158f310cf752d5ad08cd0e7e60.woff2) format("woff2"), url(https://assets.brevo.com/font/Roboto/Latin/bold/normal/ece3a1d82f18b60bcce0211725c476aa.woff) format("woff")
     }
-    #sib-container input:-ms-input-placeholder { text-align: left; font-family: Helvetica, sans-serif; color: #c0ccda; }
-    #sib-container input::placeholder { text-align: left; font-family: Helvetica, sans-serif; color: #c0ccda; }
-    #sib-container textarea::placeholder { text-align: left; font-family: Helvetica, sans-serif; color: #c0ccda; }
+
+    /* Input contrast fixes */
+    #sib-container input:-ms-input-placeholder { text-align: left; font-family: 'Inter', sans-serif; color: #6B7280; }
+    #sib-container input::placeholder { text-align: left; font-family: 'Inter', sans-serif; color: #6B7280; }
+    #sib-container textarea::placeholder { text-align: left; font-family: 'Inter', sans-serif; color: #6B7280; }
     #sib-container a { text-decoration: underline; color: #2BB2FC; }
   </style>
   <link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">
@@ -150,13 +152,12 @@
       opacity: 0.95;
     }
 
-    /* ── Brevo form wrapper overrides ── */
+    /* Brevo form wrapper overrides */
     .brevo-wrapper {
       max-width: 520px;
       margin: 0 auto;
     }
 
-    /* Override Brevo's grey background to match our card style */
     .brevo-wrapper .sib-form {
       background-color: transparent !important;
       padding: 0 !important;
@@ -170,7 +171,28 @@
       max-width: 100% !important;
     }
 
-    /* Override Brevo's default blue subscribe button with PixlCam brand gradient */
+    /* Input field contrast */
+    .brevo-wrapper #sib-container .input {
+      border: 2px solid #D1D5DB !important;
+      border-radius: 0.6rem !important;
+      color: #1F2937 !important;
+      font-family: 'Inter', sans-serif !important;
+      font-size: 0.95rem !important;
+      background-color: #F9FAFB !important;
+    }
+
+    .brevo-wrapper #sib-container .input:focus {
+      border-color: #3E6F9A !important;
+      background-color: #ffffff !important;
+      outline: none !important;
+      box-shadow: 0 0 0 3px rgba(62,111,154,0.15) !important;
+    }
+
+    .brevo-wrapper #sib-container .input::placeholder {
+      color: #6B7280 !important;
+    }
+
+    /* Subscribe button */
     .brevo-wrapper .sib-form-block__button {
       background: linear-gradient(135deg, var(--blue-left), var(--blue-right)) !important;
       border-radius: 0.75rem !important;
@@ -187,13 +209,13 @@
       transform: translateY(-1px) !important;
     }
 
-    /* Override form title and description fonts */
+    /* Form fonts */
     .brevo-wrapper .sib-form-block p,
     .brevo-wrapper .entry__label {
       font-family: 'Inter', sans-serif !important;
     }
 
-    /* Force small print on Brevo declaration */
+    /* Small print */
     .brevo-wrapper .sib-form__declaration,
     .brevo-wrapper .sib-form__declaration p,
     .brevo-wrapper .sib-form__declaration div {
@@ -248,7 +270,6 @@
     .faq-item p { font-size: 0.95rem; color: #6B7280; margin: 0; }
 
     footer { background: #0f172a; color: #cbd5f5; }
-
     .footer-link { color: #cbd5f5; text-decoration: none; font-weight: 500; }
     .footer-link:hover { color: #ffffff; text-decoration: underline; }
 
@@ -367,7 +388,7 @@
                       <svg class="icon clickable__icon progress-indicator__icon sib-hide-loader-icon" viewBox="0 0 512 512">
                         <path d="M460.116 373.846l-20.823-12.022c-5.541-3.199-7.54-10.159-4.663-15.874 30.137-59.886 28.343-131.652-5.386-189.946-33.641-58.394-94.896-95.833-161.827-99.676C261.028 55.961 256 50.751 256 44.352V20.309c0-6.904 5.808-12.337 12.703-11.982 83.556 4.306 160.163 50.864 202.11 123.677 42.063 72.696 44.079 162.316 6.031 236.832-3.14 6.148-10.75 8.461-16.728 5.01z"/>
                       </svg>
-                      Notify Me at Launch →
+                      Notify Me at Launch
                     </button>
                   </div>
                 </div>
@@ -438,7 +459,7 @@
       <span class="opacity-50">•</span>
       <a href="/privacy-policy" class="footer-link">Privacy Policy</a>
     </div>
-    <div class="opacity-50">CM Interactive Limited · England & Wales · Company No. 15392983</div>
+    <div class="opacity-50">CM Interactive Limited · England &amp; Wales · Company No. 15392983</div>
   </div>
 </footer>
 
